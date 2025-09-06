@@ -4,6 +4,7 @@ import gdown
 from src.CancerClassifier.logger import logger
 from src.CancerClassifier.utils.common import get_size
 from src.CancerClassifier.entity.config_entity import DataIngestionConfig
+
 class DataIngestion:
     def __init__(self, config: DataIngestionConfig):
         self.config = config
