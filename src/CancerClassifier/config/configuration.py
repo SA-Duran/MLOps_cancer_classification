@@ -1,7 +1,7 @@
 from src.CancerClassifier.constants.constant import CONFIG_FILE_PATH,PARAMS_FILE_PATH
-from src.CancerClassifier.utils.common import read_yaml, create_directories
+from src.CancerClassifier.utils.common import read_yaml, create_directories, save_json
 from src.CancerClassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig
-from src.CancerClassifier.entity.config_entity import TrainingConfig
+from src.CancerClassifier.entity.config_entity import TrainingConfig, EvaluationConfig
 import os
 from pathlib import Path
 
@@ -70,4 +70,14 @@ class ConfigurationManager:
 
         return training_config
     
-    
+    def get_evaluation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model=Path("artifacts/training/model.h5"),
+            training_data=Path("artifacts/data_ingestion/Chest-CT-Scan-data"),
+            all_params=self.params,
+            dagshub_repo_owner="SA-Duran",                          # << set yours
+            dagshub_repo_name="MLOps_cancer_classification",        # << set yours
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE,
+        )
+        return eval_config

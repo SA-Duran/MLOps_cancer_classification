@@ -30,3 +30,13 @@ class TrainingConfig:
     params_batch_size: int
     params_is_augmentation: bool
     params_image_size: list
+    
+@dataclass(frozen=True)
+class EvaluationConfig:
+    path_of_model: Path
+    training_data: Path
+    all_params: dict
+    dagshub_repo_owner: str          # ✅ new
+    dagshub_repo_name: str           # ✅ new
+    params_image_size: list
+    params_batch_size: int    

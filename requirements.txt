@@ -18,4 +18,5 @@ Flask
 Flask-Cors
 stack-data==0.6.3
 executing>=1.2.0
+dagshub
 #-e .
