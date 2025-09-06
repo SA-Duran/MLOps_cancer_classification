@@ -1,9 +1,9 @@
 import os
 import zipfile
 import gdown
-from src.CancerClassifier.logger import logger
-from src.CancerClassifier.utils.common import get_size
-from src.CancerClassifier.entity.config_entity import DataIngestionConfig
+from CancerClassifier.logger import logger
+from CancerClassifier.utils.common import get_size
+from CancerClassifier.entity.config_entity import DataIngestionConfig
 
 class DataIngestion:
     def __init__(self, config: DataIngestionConfig):

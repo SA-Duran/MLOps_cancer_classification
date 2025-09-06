@@ -1,7 +1,7 @@
-from src.CancerClassifier.config.configuration import ConfigurationManager
-from src.CancerClassifier.components.prepare_base_model import PrepareBaseModel
-from src.CancerClassifier.logger import logger
-from src.CancerClassifier.components.model_trainer import Training
+from CancerClassifier.config.configuration import ConfigurationManager
+from CancerClassifier.components.prepare_base_model import PrepareBaseModel
+from CancerClassifier.logger import logger
+from CancerClassifier.components.model_trainer import Training
 
 class ModelTrainingPipeline:
     def __init__(self):

@@ -1,7 +1,7 @@
 import os
 from box.exceptions import BoxValueError
 import yaml
-from src.CancerClassifier.logger import logger
+from CancerClassifier.logger import logger
 import json
 import joblib
 from ensure import ensure_annotations

@@ -1,6 +1,6 @@
-from src.CancerClassifier.config.configuration import ConfigurationManager
-from src.CancerClassifier.components.data_ingestion import DataIngestion
-from src.CancerClassifier.logger import logger
+from CancerClassifier.config.configuration import ConfigurationManager
+from CancerClassifier.components.data_ingestion import DataIngestion
+from CancerClassifier.logger import logger
 
 
 STAGE_NAME = "Data Ingestion stage"

@@ -1,11 +1,11 @@
-from src.CancerClassifier.constants.constant import *
-from src.CancerClassifier.utils.common import read_yaml, create_directories , save_json
+from CancerClassifier.constants.constant import *
+from CancerClassifier.utils.common import read_yaml, create_directories , save_json
 import tensorflow as tf
 import mlflow
 import mlflow.keras
 import dagshub
 from pathlib import Path
-from src.CancerClassifier.entity.config_entity import EvaluationConfig
+from CancerClassifier.entity.config_entity import EvaluationConfig
 
 
 class Evaluation:

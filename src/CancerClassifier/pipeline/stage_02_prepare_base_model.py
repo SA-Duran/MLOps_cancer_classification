@@ -1,6 +1,6 @@
-from src.CancerClassifier.config.configuration import ConfigurationManager
-from src.CancerClassifier.components.prepare_base_model import PrepareBaseModel
-from src.CancerClassifier.logger import logger
+from CancerClassifier.config.configuration import ConfigurationManager
+from CancerClassifier.components.prepare_base_model import PrepareBaseModel
+from CancerClassifier.logger import logger
 
 STAGE_NAME = "Prepare base model"
 

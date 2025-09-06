@@ -3,7 +3,7 @@ import urllib.request as request
 from zipfile import ZipFile
 import tensorflow as tf
 import time
-from src.CancerClassifier.entity.config_entity import TrainingConfig
+from CancerClassifier.entity.config_entity import TrainingConfig
 from pathlib import Path
 
 class Training:

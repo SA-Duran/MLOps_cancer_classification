@@ -1,7 +1,7 @@
-from src.CancerClassifier.constants.constant import CONFIG_FILE_PATH,PARAMS_FILE_PATH
-from src.CancerClassifier.utils.common import read_yaml, create_directories, save_json
-from src.CancerClassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig
-from src.CancerClassifier.entity.config_entity import TrainingConfig, EvaluationConfig
+from CancerClassifier.constants.constant import CONFIG_FILE_PATH,PARAMS_FILE_PATH
+from CancerClassifier.utils.common import read_yaml, create_directories, save_json
+from CancerClassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig
+from CancerClassifier.entity.config_entity import TrainingConfig, EvaluationConfig
 import os
 from pathlib import Path
 

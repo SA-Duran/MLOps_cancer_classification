@@ -1,6 +1,6 @@
-from src.CancerClassifier.config.configuration import ConfigurationManager
-from src.CancerClassifier.components.model_evaluation_with_mlflow import Evaluation
-from src.CancerClassifier.logger import logger
+from CancerClassifier.config.configuration import ConfigurationManager
+from CancerClassifier.components.model_evaluation_with_mlflow import Evaluation
+from CancerClassifier.logger import logger
 
 
 
